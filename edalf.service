@@ -1,0 +1,12 @@
+[Unit]
+Description=화장실 휴지 잔여량 모니터링
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/project-edalf
+ExecStart=/usr/bin/python3 notify.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

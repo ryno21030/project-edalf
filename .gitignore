@@ -21,8 +21,6 @@ desktop.ini
 *.suo
 *.user
 
-notify.py
-get_token.py
 token.txt
 token.json
 .env
