@@ -1,0 +1,8 @@
+services:
+  edalf:
+    build: .
+    restart: always
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+    env_file:
+      - .env
